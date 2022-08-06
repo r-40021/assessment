@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assessment.css">
+    <title>あなたのいいところ診断</title>
+  </head>
+  <body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDy282H4x8Kvb1UpK-N0zil_gLqZtgClSw",
+        authDomain: "frog-iitokoro.firebaseapp.com",
+        projectId: "frog-iitokoro",
+        storageBucket: "frog-iitokoro.appspot.com",
+        messagingSenderId: "103971678165",
+        appId: "1:103971678165:web:48062df6f43c14f4aebf5c"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <h1>あなたのいいところは?</h1>
+    <p>診断したい名前を入れてください</p>
+    <input type="text" id="user-name" size="40" maxlength="20">
+    <button id="assessment">診断する</button>
+    <div id="result-area"></div>
+    <div id="tweet-area"></div>
+    <script src="assessment.js"></script>
+  </body>
+</html>
